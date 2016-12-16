@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>TSP visualizer</title>
+  <script src="rand1000.js"></script>
+  <script src="naruse10000.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <canvas width="600" height="600" id="canvas"></canvas><br>
+  <span>data : </span>
+  <!-- <input type="text" id="area" style="width:500px;height:100px;"> -->
+  <textarea id="area" cols="100" rows="5"></textarea>
+  <input type="button" value="reload" onclick="updateVis();"><br>
+  <input type="button" value="rand1000" onclick="changeType(0);">
+  <input type="button" value="naruse10000" onclick="changeType(1);"><br>
+</body>
+</html>
